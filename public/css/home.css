@@ -1,0 +1,18 @@
+/*main*/
+main  .banner{
+    display: none;
+}
+
+main h3{
+    font-size: var(--titulare);
+    margin-left: 10px;
+}
+main article .price{
+    font-size: var(--precios);
+}
+main .discount{
+    font-size: var(--descuentos-descripciones);
+}
+main h4{
+    font-size: var(--descuentos-descripciones);
+}

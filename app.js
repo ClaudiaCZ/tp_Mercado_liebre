@@ -5,6 +5,6 @@ const path = require('path');
 
 app.use(express.static('public'));
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'views', 'home.html')));
-app.get('/ofertas', (req, res) => res.sendFile(path.join(__dirname, 'views', 'ofertas.html')));
+
 
 app.listen(porth, () => console.log('Servidor ejecutando en el puerto ', porth));
