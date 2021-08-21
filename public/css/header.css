@@ -1,13 +1,14 @@
 header{
     background-color: var(--color-amarillo);
-    width: 100%;
+    /*width: 100%;*/
+    padding: 10px;
 }
 .logo {
     width: 45%;
    margin: 30px 0 0 30px;
 }
 .buscador{
-    margin: 20px;
+    margin: 10px;
 }
 .holding{
     text-align: center;
@@ -24,6 +25,33 @@ header .menu a i i{
      border-radius: 3px;
      width: 20px;
      font-size: 16px
+}
+
+/*header .nav-menu {
+    display: none;
+}
+
+header .nav-login{
+    display: none;
+}*/
+header nav ul{
+    display: none;
+}
+
+@media (min-width: 361px) {
+    header .nav-menu{
+        display: block;
+    }
+    header nav ul{
+        display: block;
+    }
+    .holding{
+        margin: 10px;
+    }
+    header .menu{
+        display: none;
+    }
+
 }
 
 

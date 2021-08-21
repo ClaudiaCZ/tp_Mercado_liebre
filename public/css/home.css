@@ -1,18 +1,83 @@
 /*main*/
+main{
+    width: 90%;
+    margin: 0 auto;
+}
 main  .banner{
     display: none;
+}
+main section.banner img {
+    width: 100%;
+}
+main section.banner{
+    width: 100%;
 }
 
 main h3{
     font-size: var(--titulare);
     margin-left: 10px;
 }
+main section article{
+    background-color: white;
+    margin-bottom: 10px;
+}
+main section article .description{
+    padding: 20px;
+}
+main section article img{
+    border-bottom: 1px solid #ebebeb;
+    width: 100%;
+}
+main section article div .camion i{
+    color: var(--color-verde);
+    border: 1px solid var(--color-verde);
+    border-radius: 50%;
+    padding: 8px;
+}
 main article .price{
     font-size: var(--precios);
 }
 main .discount{
     font-size: var(--descuentos-descripciones);
+    color: var(--color-verde);
 }
 main h4{
     font-size: var(--descuentos-descripciones);
+    color: var(--gris-oscuro);
+    display: none;
 }
+
+/*tablet*/
+@media (min-width: 361px){
+
+    main section article {
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+    
+    main  .banner{
+        display: block;
+    }
+
+    main h4{
+        display: block;
+    }
+
+    main{
+        margin: unset;
+        width: unset;
+    }
+
+    main .producto{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    main section.ofertas{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+/* Desktop */
+
+ /*@media (min-width: 769px) {
+ }*/
