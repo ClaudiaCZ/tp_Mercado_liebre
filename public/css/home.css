@@ -21,6 +21,13 @@ main section article{
     background-color: white;
     margin-bottom: 10px;
 }
+main section article div .contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
 main section article .description{
     padding: 20px;
 }
@@ -28,18 +35,28 @@ main section article img{
     border-bottom: 1px solid #ebebeb;
     width: 100%;
 }
+main section article div.camion{
+    display: flex;
+    position: relative;
+}
 main section article div .camion i{
     color: var(--color-verde);
     border: 1px solid var(--color-verde);
     border-radius: 50%;
     padding: 8px;
+    /*margin-left: 90%;*/
+    position: absolute;
+    right: 10px;
+    top: -25px;
 }
 main article .price{
     font-size: var(--precios);
 }
+
 main .discount{
     font-size: var(--descuentos-descripciones);
     color: var(--color-verde);
+    margin-left: 10px;
 }
 main h4{
     font-size: var(--descuentos-descripciones);
@@ -48,7 +65,7 @@ main h4{
 }
 
 /*tablet*/
-@media (min-width: 361px){
+@media (min-width: 481px){
 
     main section article {
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
@@ -76,8 +93,71 @@ main h4{
         margin: 0 auto;
         width: 90%;
     }
+    main h3{
+        margin-top: 20px;
+       margin-left: 40px;
+        margin-bottom: 20px;
+    }
+    main section.producto, section.ofertas{
+        display: flex;
+       /* border: solid 3px black;*/
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main article{
+       width: 45%;
+    }
+    main section article div .camion i{
+    
+        right: 11px;
+        top: -26px;
+    }
+    main .discount{
+       margin-left: 70px;
+    }
+    main h4{
+       margin-top: 20px;
+    }
 }
 /* Desktop */
 
- /*@media (min-width: 769px) {
- }*/
+ @media (min-width: 769px) {
+     main h3{
+         margin-top: 20px;
+        margin-left: 40px;
+         margin-bottom: 20px;
+     }
+     main section article .description{
+         margin-top: 5px;
+     }
+     main section.producto, section.ofertas{
+         display: flex;
+        /* border: solid 3px black;*/
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+     main article{
+        width: 22%;
+     }
+     main section article div .camion i{
+     
+         right: -10px;
+         top: -36px;
+     }
+     main section article div .contenedor{
+         flex-direction: row;
+         align-content: center;
+         align-items: flex-end;
+     }
+     main article .price{
+         font-size: 15px;
+     }
+     main .discount{
+        margin-left: 6px;
+        font-size: 12px;
+     }
+     main h4{
+        margin-top: 20px;
+     }
+ }
+
