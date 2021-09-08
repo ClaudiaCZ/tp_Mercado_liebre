@@ -175,7 +175,8 @@ header nav ul{
 
  @media (min-width: 769px) {
     header{
-        height: 140px
+      /*  height: 140px*/
+      height: 166px;
     }
 
     .logo img{
@@ -232,4 +233,19 @@ header nav ul{
   /* header nav ul.login {
    background-color: blueviolet;
 }*/
+}
+
+@media (min-width: 1040px) {
+    header{
+        height: 189px
+    }
+
+    .contenedor-logo {
+        display: flex;
+        justify-content: space-between;
+    }    
+
+    header nav.nav-menu{
+        top: -33px;
+    }
 }
